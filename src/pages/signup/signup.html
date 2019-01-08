@@ -1,0 +1,85 @@
+<ion-content class="bg-image" padding>
+	<img src="assets/imgs/cyber-1-logo.png" class="logo">
+	<h3 style="font-family: baloobhaina" class="logotext">Enumerator Signup</h3>
+
+	<div>
+
+    <ion-list class="list" inset>
+    	<ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>First Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>Last Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>Gender</ion-label>
+        <ion-select>
+        	<ion-option>
+        		Male
+        	</ion-option>
+        	<ion-option>
+        		Female
+        	</ion-option>
+        </ion-select>
+      </ion-item>
+       <ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>Address</ion-label>
+        <ion-textarea type="text"></ion-textarea>
+      </ion-item>
+        <ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>LGA</ion-label>
+        <ion-select>
+        	<ion-option>
+        		Male
+        	</ion-option>
+        	<ion-option>
+        		Female
+        	</ion-option>
+        </ion-select>
+      </ion-item>
+        <ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>Bank Account</ion-label>
+        <ion-select>
+        	<ion-option>
+        		Male
+        	</ion-option>
+        	<ion-option>
+        		Female
+        	</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>Account No.</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>Phone No.</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>Email</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class="label">
+        <ion-label color="myWhite" style="font-size:12px" floating>Password</ion-label>
+        <ion-input color="myWhite" type="password" ></ion-input>
+      </ion-item>
+
+      <ion-item class="label">
+      	<div text-center>
+      	<button class="myButton" ion-button color="primary" round [navPush]="nextPage">Sign Up</button>
+      </div>
+      </ion-item>
+    </ion-list>
+
+
+  </div>
+
+
+ 
+	
+
+</ion-content>
