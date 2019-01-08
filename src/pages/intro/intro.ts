@@ -22,6 +22,9 @@ export class IntroPage {
 	signupPage = SignupPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private iab: InAppBrowser) {
+    if (localStorage.getItem('redirection') == 'yes') {
+      this.openBrowser();
+    }
   }
 
   ionViewDidLoad() {
@@ -32,6 +35,7 @@ export class IntroPage {
     console.log('asd')
     const browser = this.iab.create('http://cyberenumerator.com/login','_self',{location:'no', zoom:'no'}); 
    browser.show();
+   localStorage.setItem('redirection', 'yes');
   }
 
 }
